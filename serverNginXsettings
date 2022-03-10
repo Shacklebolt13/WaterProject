@@ -1,3 +1,7 @@
+# /etc/nginx/sites-available/waterProject
+
+
+
 server {
 
 	listen 80;
