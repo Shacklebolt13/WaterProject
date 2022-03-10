@@ -1,0 +1,11 @@
+server {
+
+	listen 80;
+	root <path_to_projectRoot>;
+	server_name <server_ip>;
+	
+	location / {
+		include proxy_params;
+		proxy_pass http://unix:/<path_to_socketFile>.sock;
+	}
+}

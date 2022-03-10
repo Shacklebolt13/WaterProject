@@ -1,0 +1,12 @@
+[Unit]
+Description=gunicorn daemon
+After=network.target
+
+[Service]
+User=<user_name>
+Group=www-data
+WorkingDirectory=<path_to_projectRoot>
+ExecStart=<path_to_virtualEnv>/bin/gunicorn --workers 2 --bind unix:/<path_to_socketFile>.sock passman.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
