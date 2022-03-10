@@ -1,3 +1,4 @@
+
 # Welcome to StackEdit!
 
 To use the code on the server, follow the steps below:
@@ -25,8 +26,10 @@ To use the code on the server, follow the steps below:
 
 7. Restart Nginx Daemon and reload systemctl
    
-    ```sudo systemctl reload
+    ```
+    sudo systemctl reload
     sudo service waterProject start
-    sudo service nginx restart```
+    sudo service nginx restart
+    ```
 
 
